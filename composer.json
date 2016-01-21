@@ -1,0 +1,22 @@
+{
+  "name": "platx/yii2-relative-select2",
+  "description": "Relative Select2 Widget for Yii2 Framework",
+  "type": "yii2-extension",
+  "keywords": ["yii2","extension","relative","select2","kartik"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vladyslav Platonov",
+      "email": "vlad@plat-x.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "*",
+    "kartik-v/yii2-widgets": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "platx\\relativeselect2\\": ""
+    }
+  }
+}
