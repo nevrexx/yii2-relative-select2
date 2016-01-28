@@ -54,7 +54,7 @@ class RelativeSelect2 extends \kartik\select2\Select2
         $this->options['data']['select2-url'] = $this->url;
 
         if(!empty($this->model) && isset($this->model->{$this->attribute})) {
-            if((isset($this->options['multiple']) && $this->options['multiple']) || (is_array($this->model->{$this->attribute}) && !empty($this->model->{$this->attribute}))) {
+            if(is_array($this->model->{$this->attribute})) {
                 $this->options['data']['select2-selected-items'] = implode(',', $this->model->{$this->attribute});
             } else {
                 $this->options['data']['select2-selected-items'] = $this->model->{$this->attribute};
